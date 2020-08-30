@@ -1,0 +1,58 @@
+*,
+*:before, 
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 10rem;
+    width: 100%;   
+
+    background: rgb(161, 161, 161);
+
+    & > * {
+        color: white;
+        text-decoration: none;
+        font-weight: 900;
+        font-size: 2rem;
+    }
+
+    &__logo {
+        margin-left: 3rem;
+        //flex: 0 1 min-content;
+        text-transform: uppercase;
+        font-size: 3.5rem;
+        font-weight: 700;
+
+        &--slim {
+        display: block;
+
+            font-weight: 100;
+            font-size: 2rem;
+        }
+    }
+
+    &__box {
+
+        &--more {
+            background: rgb(116, 110, 110);
+            padding: 1rem 3rem;
+        }
+
+    }
+
+    &__searchbar {
+        margin-right: 3rem;
+    }
+}
